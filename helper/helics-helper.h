@@ -15,8 +15,9 @@ public:
   HelicsHelper ();
   void SetupFederate (void);
   void SetupFederate (int argc, char **argv);
-  void SetupFederate (std::string &jsonString);
+  void SetupFederate (const std::string &jsonString);
   void SetupApplicationFederate (void);
+  void SetupApplicationFederate (const std::string &jsonString);
   void SetupCommandLine (CommandLine &cmd);
 
   ApplicationContainer InstallFilter (Ptr<Node> node, const std::string &name) const;

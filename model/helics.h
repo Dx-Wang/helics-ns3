@@ -9,7 +9,7 @@
 
 namespace ns3 {
 
-extern std::shared_ptr<helics::MessageFederate> helics_federate;
+extern std::shared_ptr<helics::CombinationFederate> helics_federate;
 extern helics::Endpoint helics_endpoint;
 
 std::ostream& operator << (std::ostream& stream, const helics::Message &message);
